@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Bg from './components/Background'
 import BgDetail from './components/BackgroundDetail'
 import Wrapper from './components/Wrapper'
@@ -8,6 +8,10 @@ import StoragelPanel from './components/StoragePanel'
 import 'normalize.css'
 
 function App() {
+  useEffect(() => {
+    document.title = "Fylo Storage Challenge"
+  }, [])
+
   return (
     <div className="App">
       <Bg color="hsl(229, 57%, 11%)"/>
