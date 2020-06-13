@@ -1,12 +1,27 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import LogoImg from '../images/logo.svg'
 
 import documentIcon from '../images/icon-document.svg' 
 import folderIcon from '../images/icon-folder.svg' 
 import uploadIcon from '../images/icon-upload.svg' 
 
-function Menu(props) {
+const Entrance = keyframes`
+    0% {
+      -webkit-transform: scale(2);
+              transform: scale(2);
+      -webkit-filter: blur(4px);
+              filter: blur(4px);
+      opacity: 0;
+    } 
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }    
+  `
 
   const MenuDiv = styled.div`
     display: flex;
@@ -18,6 +33,7 @@ function Menu(props) {
     border-radius: 15px;
     border-top-right-radius: 100px;
     box-sizing: border-box;
+    animation: ${Entrance} 2s 0.3s;
   `;
 
   const Logo = styled.img`
@@ -47,6 +63,8 @@ function Menu(props) {
   const ButtonImg = styled.img` 
     transform: scale(1.20);
   `
+
+function Menu(props) {
 
   return (
     <>

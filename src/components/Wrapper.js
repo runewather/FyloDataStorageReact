@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Wrapper(props) {
-
   const WrapperDiv = styled.div`
     display: flex;
     flex-direction: column;
@@ -14,6 +12,8 @@ function Wrapper(props) {
     left: 0;
     top: 0;
   `;
+
+function Wrapper(props) {
 
   return (
     <>

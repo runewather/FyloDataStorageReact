@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Content(props) {
-
   const ContentDiv = styled.div`
     display: flex;
     flex-direction: row;
@@ -10,6 +8,8 @@ function Content(props) {
     justify-content: center;
     width: 100%;
   `;
+
+function Content(props) {
 
   return (
     <>

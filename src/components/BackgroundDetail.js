@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import bgDetail from '../images/bg-desktop.svg'
 
-function BackgroundDetail(props) {
-
   const BgDetail = styled.div`
     border-top-left-radius: 300px;
     position: fixed; 
@@ -14,6 +12,8 @@ function BackgroundDetail(props) {
     bottom: 0;
     z-index: -999;
   `;
+
+function BackgroundDetail(props) {
 
   return (
     <>
